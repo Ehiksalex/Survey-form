@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div id="main-text">
+                <h1>CapacityBay Survey Form</h1>
+            </div>
+            <div id="decription">
+                <p>Thank you for taking the time to help us improve the platform</p>
+            </div>
+        </header>
+        <!--Form Creating-->
+        <form id="form">
+            <div class="form-content">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" class="form-control" 
+                placeholder="Enter your name" required/>
+            </div>
+            <div class="form-content">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" class="form-control" 
+                placeholder="Enter your Email" required/>
+            </div>
+            <div class="form-content">
+                <label for="number">Age<span>(optional)</span></label>
+                <input type="number" id="number" name="age" class="form-control" 
+                placeholder="Age" required/>
+            </div>
+            <div class="form-content">
+                <p>Which option best describes your current role?</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                    <option disabled selected value>Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="job">Full Time Job</option>
+                    <option value="Learner">Full Time Learner</option>
+                    <option value="not to say">Prefer not to say</option>
+                    <option value="others">Others</option>
+                </select>
+            </div>
+            <div class="form-content">
+                <p> Would you recommend CapacityBay to a friend? </p>
+                <label><input type="radio" name="recommended" value="definitely"
+                class="input-radio" checked/>Definitely</label><br>
+                <label><input type="radio" name="recommended" value="maybe"
+                class="input-radio" checked/>Maybe</label><br>
+                <label><input type="radio" name="recommended" value="not-sure"
+                class="input-radio" checked/>Not-sure</label>
+            </div>
+            <div class="form-content">
+                <p>What is your favorite feature of CapacityBay?</p>
+                <select id="most-likely" name="mostlike" class="form-control" required>
+                    <option disabled selected value>Select an option</option>
+                    <option value="challenges">Challenges</option>
+                    <option value="project">Project</option>
+                    <option value="community">Community</option>
+                    <option value="openSource">Open Source</option>
+                </select>
+            </div>
+            <div class="form-content">
+                <p>
+                    What would you to see improved?
+                    <span class="clue">(Check all that apply)</span>
+                </p>
+                <label><input type="checkbox" name="prefer" value="front-end-projects"/>Front-end projects</label><br>
+                <label><input type="checkbox" name="prefer" value="back-end-projects"/>Back-end projects</label><br>
+                <label><input type="checkbox" name="prefer" value="data visualization"/>Data Visualization</label><br>
+                <label><input type="checkbox" name="prefer" value="challenges"/>Challenges</label><br>
+                <label><input type="checkbox" name="prefer" value="openSourceCommunity"/>Open Source Community</label><br>
+                <label><input type="checkbox" name="prefer" value="gitterHelprooms"/>Gitter Help rooms</label><br>
+                <label><input type="checkbox" name="prefer" value="videos"/>Videos</label><br>
+                <label><input type="checkbox" name="prefer" value="citymeetups"/>City Meetups</label><br>
+                <label><input type="checkbox" name="prefer" value="wiki"/>Wiki</label><br>
+                <label><input type="checkbox" name="prefer" value="forum"/>Forum</label><br>
+                <label><input type="checkbox" name="prefer" value="additionalcourses"/>Additional Courses</label><br>
+            </div>
+            <div class="form-content">
+                <p>Any comments or suggestions?</p>
+                <textarea name="comment" id="text" placeholder="Enter your comment here..."></textarea>
+            </div>
+            <div class="form-content">
+                <button type="submit" id="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
